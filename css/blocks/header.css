@@ -1,10 +1,10 @@
 .header {
     min-height: 100vh;
-    background: url('/images/hero-bg.jpg') center/cover no-repeat;       
+    background: url('../../images/hero-bg.jpg') center/cover no-repeat;       
 }
 
 .header-inner {        
-    max-width: 1410px;    
+    max-width: 1410px; 
     padding-inline: 25px;
     margin-inline: auto;   
 }
@@ -518,7 +518,7 @@ input[type="checkbox"]:checked + label::after {
 
 @media (max-width: 720px) {
     .header-inner {
-        background-image: url('/images/boards-small.png'), url('/images/bg-polygon/header-bg-720.svg');        
+        background-image: url('../../images/boards-small.png'), url('../../images/bg-polygon/header-bg-720.svg');        
         background-position: right, right;
         background-repeat: no-repeat;
         height: 40vh;
