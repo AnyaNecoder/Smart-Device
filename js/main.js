@@ -17,6 +17,10 @@ button.addEventListener('click', () => {
 });
 
 
+const openBtn = document.querySelector('.js-open-btn');
+const closeBtn = document.querySelector('.js-close-btn');
+const modal = document.querySelector('.js-modal');
+
 openBtn.addEventListener('click', () => {
     modal.showModal();
 });
