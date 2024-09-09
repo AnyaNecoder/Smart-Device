@@ -155,8 +155,7 @@
     row-gap: 48px;    
 }
 
-.header-content__title {
-    font-family: var(--font-family-accent);
+.header-content__title {    
     font-weight: 700;
     font-size: 80px;
     line-height: 1.2;
@@ -316,8 +315,11 @@ input::-webkit-inner-spin-button {
 }
 
 input[type=number] {
-    -moz-appearance: textfield;
+    appearance: textfield;
+    -webkit-appearance: textfield; /* Safari и Chrome */
+    -moz-appearance: textfield; /* Firefox */
 }
+
 
 input::placeholder {   
     color: var(--color-light);
