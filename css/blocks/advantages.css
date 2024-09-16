@@ -33,7 +33,7 @@
 .advantages-cards__card:hover {
     background-color: var(--color-blue);
     border-color: var(--color-blue);
-    color: var(--color-light);    
+    color: var(--color-light);     
 }
 
 .advantages-cards__card:hover * {
@@ -41,13 +41,21 @@
     fill: var(--color-light);
 }
 
+/* .advantages-cards__card svg {
+    transition: fill 0.3s ease;
+}
+
+.advantages-cards__card:hover svg {
+    fill: var(--color-light);
+} */
+
 .advantages-cards__card-title {
     font-size: 24px;
     color: var(--color-blue);
 }
 
 .about {
-    margin-bottom: 100px;
+    padding-bottom: 100px;
 }
 
 .about__description {
@@ -145,10 +153,7 @@
         margin-bottom: 34px;
     }    
 }
-@media (max-width: 765px) {
-    .container {
-        padding-inline: 15px;
-    }
+@media (max-width: 765px) {    
     .advantages {
         padding-block: 37px;
     }
@@ -171,7 +176,10 @@
         height: auto;
     }    
 }
-@media (max-width: 685px) {    
+@media (max-width: 685px) {
+    .container {
+        padding-inline: 15px;
+    }        
     .advantages-inner {          
         background-image: url('../../images/bg-polygon/polygon-center.svg');
         background-position: bottom right -250px;
