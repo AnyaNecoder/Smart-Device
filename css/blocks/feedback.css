@@ -1,0 +1,137 @@
+.feedback {
+    min-height: 100vh;
+    padding-block: 96px 113px;
+    background-color: var(--color-blue);
+    background-image: url(../../images/airplane-polygon.png), url(../../images/bg-polygon/feedback-polygon-top.svg), url(../../images/bg-polygon/feedback-polygon-right.svg);
+    background-position: 22% -8%, top 94px right 101px, top 285px right -10px;
+    background-repeat: no-repeat;    
+}
+
+.feedback__inner {
+    max-width: 570px;
+    margin-left: auto;
+}
+
+.feedback__title {
+    font-size: 36px;
+    color: var(--color-light);
+    margin-bottom: 15px;
+}
+
+.feedback__text {
+    color: var(--color-light);
+    margin-bottom: 49px;
+}
+
+.feedback__form-inner {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px 31px;
+}
+
+.feedback__form-input {
+    min-height: 50px;
+    background-color: rgba(255, 255, 255, 0.1);        
+    padding: 14px 16px;    
+    border: var(--color-light-gray);
+}
+
+.feedback__form-input:hover {           
+    background-color: rgba(255, 255, 255, 0.3);         
+}
+
+.feedback__form-input.wide {
+    grid-column: -1 / 1;
+}
+
+.feedback__form-text {
+    resize: none;
+    min-height: 154px;
+}
+
+textarea::placeholder {   
+    color: var(--color-light);
+}
+
+.feedback__form-btn {
+    margin-bottom: 0;
+}
+
+.feedback__form input[type="checkbox"] + label {    
+    color: var(--color-light);   
+    padding-left: 40px;
+    margin-top: 5px;          
+}
+
+.feedback__form input[type="checkbox"] + label::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 7px;
+    margin-right: 16px;
+}
+
+.feedback__form input[type="checkbox"]:checked + label::after {             
+    top: 4px;
+    left: 12px;      
+}
+
+
+
+
+
+@media (max-width: 1920px) {
+    .feedback {        
+        background-position: 10% -8%, top 94px right 101px, top 285px right -10px;           
+    }             
+}
+
+@media (max-width: 1650px) {
+    .feedback {
+        background-image: url(../../images/airplane-polygon.png);        
+        background-position: left -8%;           
+    }             
+}
+
+@media (max-width: 1370px) {
+    .feedback {                
+        background-position: -25% -8%;           
+    }             
+}
+
+@media (max-width: 1180px) {
+    .feedback {                
+        background-image: none;
+        padding-block: 83px 130px;           
+    }
+    .feedback__inner {
+        max-width: 590px;
+        margin-inline: auto;
+    }
+    .feedback__title {
+        font-size: 32px;        
+        margin-bottom: 21px;
+    }
+    .feedback__form-btn {
+        display: block;
+    }             
+}
+
+@media (max-width: 560px) {
+    .feedback {       
+        padding-block: 33px 41px;           
+    }    
+    .feedback__form-inner {       
+        grid-template-columns: 1fr;
+        row-gap: 30px;
+    }
+    .feedback__title {
+        font-size: 28px;        
+        margin-bottom: 15px;
+    }
+    .feedback__form-btn {
+        display: block;
+    }             
+}
+
