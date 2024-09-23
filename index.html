@@ -183,15 +183,27 @@
                 <ul class="services__list">
                     <li class="services__item services__item-production">
                         <h3 class="services__item-title title">Производство печатных плат</h3>
-                        <a class="services__link" href="#"></a>                          
+                        <a class="services__link" href="#">
+                            <svg width="6" height="9" viewBox="0 0 6 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 8.5L5 4.5L1 0.5" stroke="white" stroke-linejoin="round"/>
+                            </svg>
+                        </a>                          
                     </li>
                     <li class="services__item services__item-mounting">
                         <h3 class="services__item-title title">Монтаж печатных плат</h3>
-                        <a class="services__link" href="#"></a>                          
+                        <a class="services__link" href="#">
+                            <svg width="6" height="9" viewBox="0 0 6 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 8.5L5 4.5L1 0.5" stroke="white" stroke-linejoin="round"/>
+                            </svg>
+                        </a>                          
                     </li>
                     <li class="services__item services__item-components">
                         <h3 class="services__item-title title">Комплектующие для светотехники</h3>
-                        <a class="services__link" href="#"></a>                          
+                        <a class="services__link" href="#">
+                            <svg width="6" height="9" viewBox="0 0 6 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 8.5L5 4.5L1 0.5" stroke="white" stroke-linejoin="round"/>
+                            </svg>
+                        </a>                          
                     </li>                        
                   </ul>
             </div>
@@ -203,11 +215,12 @@
                     <p class="feedback__text">Мы проконсультируем Вас бесплатно</p>
                     <form class="feedback__form">
                         <div class="feedback__form-inner">
-                            <input class="feedback__form-input" id="name" type="tel" placeholder="Имя" inputmode="text" required autofocus>
-                            <label class="visually-hidden" for="name"></label>                        
-                            <input class="feedback__form-input" id="phone" type="number" placeholder="Телефон" inputmode="tel" required autofocus>
-                            <label class="visually-hidden" for="phone"></label>                            
-                            <textarea class="feedback__form-text feedback__form-input wide" placeholder="Ваш вопрос" name="user-comment" id="user-message" spellcheck="true"></textarea>
+                            <input class="feedback__form-input" id="feedback-name" type="tel" placeholder inputmode="text" required autofocus>
+                            <label class="feedback__user-name" for="feedback-name">Имя</label>                        
+                            <input class="feedback__form-input" id="feedback-phone" type="number" placeholder inputmode="tel" required autofocus>
+                            <label class="feedback__user-number" for="feedback-phone">Телефон</label>                            
+                            <textarea class="feedback__form-text feedback__form-input wide" placeholder name="user-comment" id="feedback-user-message" spellcheck="true"></textarea>
+                            <label class="feedback__text" for="feedback-user-message">Ваш вопрос</label>
                             <button class="submit-form-btn header-actions-button feedback__form-btn" type="submit">Задать вопрос</button>            
                             <input class="visually-hidden" type="checkbox" id="feedback-checkbox" required checked>
                             <label class="label-checkbox" for="feedback-checkbox">Я согласен на обработку персональных данных</label>

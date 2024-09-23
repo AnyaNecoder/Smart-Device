@@ -23,6 +23,10 @@
     margin-bottom: 49px;
 }
 
+.feedback__form {
+    position: relative;
+}
+
 .feedback__form-inner {
     width: 100%;
     display: grid;
@@ -47,7 +51,43 @@
 
 .feedback__form-text {
     resize: none;
-    min-height: 154px;
+    min-height: 154px;    
+}
+
+.feedback__user-name {
+    position: absolute;
+    top: 1rem;
+    left: 3%;
+    font-size: 16px;    
+    color: var(--color-light);    
+    transition-duration: 0.3s;
+}
+
+.feedback__user-number {
+    position: absolute;
+    top: 1rem;
+    left: 55.5%;
+    font-size: 16px;    
+    color: var(--color-light);    
+    transition-duration: 0.3s;
+}
+
+.feedback__text {
+    position: absolute;
+    top: 32%;
+    left: 3%;
+    font-size: 16px;    
+    color: var(--color-light);    
+    transition-duration: 0.3s;
+}
+
+.feedback__form-input:not(:placeholder-shown) + .feedback__user-name,
+.feedback__form-input:not(:placeholder-shown) + .feedback__user-number,
+.feedback__form-input:not(:placeholder-shown) + .feedback__text {
+    color: var(--color-light);
+    scale: 0.7em;
+    translate: -0.5em -1.25em;
+    font-size: 14px;
 }
 
 textarea::placeholder {   
@@ -84,6 +124,11 @@ textarea::placeholder {
 @media (max-width: 1920px) {
     .feedback {        
         background-position: 10% -8%, top 94px right 101px, top 285px right -10px;           
+    }             
+}
+@media (max-width: 1760px) {
+    .feedback {        
+        background-position: 10% -8%, top 94px right 50px, top 285px right -10px;           
     }             
 }
 
@@ -132,6 +177,14 @@ textarea::placeholder {
     }
     .feedback__form-btn {
         display: block;
+    }
+    .feedback__user-number {        
+        top: 6rem;
+        left: 3%;        
+    }    
+    .feedback__text {        
+        top: 11rem;
+        left: 3%;        
     }             
 }
 
