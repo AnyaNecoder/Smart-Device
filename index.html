@@ -80,9 +80,9 @@
                         <button class="close-form-btn js-close-btn" type="reset" aria-label="Закрыть модальное окно" formmethod="dialog"></button>
                         <h3 class="call-form__title">Закажите звонок</h3>
                         <p class="call-form__text">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>                        
-                        <input class="call-form__input" id="name" type="tel" placeholder inputmode="text" required autofocus>
+                        <input class="call-form__input" id="name" type="text" placeholder inputmode="text" required autofocus>
                         <label class="user-name" for="name">Имя</label>                        
-                        <input class="call-form__input" id="phone" type="number" placeholder inputmode="tel" required autofocus>
+                        <input class="call-form__input" id="phone" type="tel" placeholder inputmode="tel" required autofocus>
                         <label class="user-number" for="phone">Телефон</label>
                         <label class="visually-hidden" for="user-message">Ваше сообщение</label>
                         <textarea class="call-form__text-area call-form__input" name="user-comment" id="user-message" spellcheck="true"></textarea>
@@ -215,9 +215,9 @@
                     <p class="feedback__text">Мы проконсультируем Вас бесплатно</p>
                     <form class="feedback__form">
                         <div class="feedback__form-inner">
-                            <input class="feedback__form-input" id="feedback-name" type="tel" placeholder inputmode="text" required autofocus>
+                            <input class="feedback__form-input" id="feedback-name" type="text" placeholder inputmode="text" required autofocus>
                             <label class="feedback__user-name" for="feedback-name">Имя</label>                        
-                            <input class="feedback__form-input" id="feedback-phone" type="number" placeholder inputmode="tel" required autofocus>
+                            <input class="feedback__form-input" id="feedback-phone" type="tel" placeholder inputmode="tel" required autofocus>
                             <label class="feedback__user-number" for="feedback-phone">Телефон</label>                            
                             <textarea class="feedback__form-text feedback__form-input wide" placeholder name="user-comment" id="feedback-user-message" spellcheck="true"></textarea>
                             <label class="feedback__text" for="feedback-user-message">Ваш вопрос</label>
@@ -236,8 +236,8 @@
     </main>
 
 
-    
 
+    <script src="./js/inputmask.min.js"></script>
     <script src="./js/main.js"></script>    
 </body>
 </html>

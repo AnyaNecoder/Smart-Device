@@ -351,7 +351,9 @@ input::placeholder {
 }
 
 .call-form__input:not(:placeholder-shown) + .user-name,
-.call-form__input:not(:placeholder-shown) + .user-number {
+.call-form__input:not(:placeholder-shown) + .user-number,
+.call-form__input:hover + .user-name,
+.call-form__input:hover + .user-number {
     color: var(--color-light);
     scale: 0.7em;
     translate: -0.5em -1.25em;

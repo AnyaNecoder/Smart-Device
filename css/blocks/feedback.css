@@ -83,7 +83,10 @@
 
 .feedback__form-input:not(:placeholder-shown) + .feedback__user-name,
 .feedback__form-input:not(:placeholder-shown) + .feedback__user-number,
-.feedback__form-input:not(:placeholder-shown) + .feedback__text {
+.feedback__form-input:not(:placeholder-shown) + .feedback__text,
+.feedback__form-input:hover + .feedback__user-name,
+.feedback__form-input:hover + .feedback__user-number,
+.feedback__form-input:hover + .feedback__text {
     color: var(--color-light);
     scale: 0.7em;
     translate: -0.5em -1.25em;
