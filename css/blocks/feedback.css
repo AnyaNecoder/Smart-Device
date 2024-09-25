@@ -72,7 +72,7 @@
     transition-duration: 0.3s;
 }
 
-.feedback__text {
+.feedback__text-message {
     position: absolute;
     top: 32%;
     left: 3%;
@@ -83,10 +83,10 @@
 
 .feedback__form-input:not(:placeholder-shown) + .feedback__user-name,
 .feedback__form-input:not(:placeholder-shown) + .feedback__user-number,
-.feedback__form-input:not(:placeholder-shown) + .feedback__text,
+.feedback__form-input:not(:placeholder-shown) + .feedback__text-message,
 .feedback__form-input:hover + .feedback__user-name,
 .feedback__form-input:hover + .feedback__user-number,
-.feedback__form-input:hover + .feedback__text {
+.feedback__form-input:hover + .feedback__text-message {
     color: var(--color-light);
     scale: 0.7em;
     translate: -0.5em -1.25em;

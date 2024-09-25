@@ -4,7 +4,7 @@
 }
 
 .header-inner {        
-    max-width: 1410px; 
+    max-width: 1460px; 
     padding-inline: 25px;
     margin-inline: auto;   
 }
@@ -415,7 +415,7 @@ input[type="checkbox"]:checked + label::after {
 
 
 
-@media (max-width: 1540px) {
+@media (max-width: 1590px) {
     .header-content__info {
         max-width: 600px;
         row-gap: 48px;    
