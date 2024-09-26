@@ -1,9 +1,9 @@
 .feedback {
-    min-height: 100vh;
+    /* min-height: 100vh; */
     padding-block: 96px 113px;
     background-color: var(--color-blue);
     background-image: url(../../images/airplane-polygon.png), url(../../images/bg-polygon/feedback-polygon-top.svg), url(../../images/bg-polygon/feedback-polygon-right.svg);
-    background-position: 22% -8%, top 94px right 101px, top 285px right -10px;
+    background-position: 20% -150%, top 94px right 101px, top 285px right -10px;
     background-repeat: no-repeat;    
 }
 
@@ -74,7 +74,7 @@
 
 .feedback__text-message {
     position: absolute;
-    top: 32%;
+    top: 33%;
     left: 3%;
     font-size: 16px;    
     color: var(--color-light);    
@@ -126,25 +126,25 @@ textarea::placeholder {
 
 @media (max-width: 1920px) {
     .feedback {        
-        background-position: 10% -8%, top 94px right 101px, top 285px right -10px;           
+        background-position: 10% -150%, top 94px right 101px, top 285px right -10px;           
     }             
 }
 @media (max-width: 1760px) {
     .feedback {        
-        background-position: 10% -8%, top 94px right 50px, top 285px right -10px;           
+        background-position: 10% -150%, top 94px right 50px, top 285px right -10px;           
     }             
 }
 
 @media (max-width: 1650px) {
     .feedback {
         background-image: url(../../images/airplane-polygon.png);        
-        background-position: left -8%;           
+        background-position: top -150% left -5%;           
     }             
 }
 
 @media (max-width: 1370px) {
     .feedback {                
-        background-position: -25% -8%;           
+        background-position: top -150% left -30%;           
     }             
 }
 
@@ -185,7 +185,7 @@ textarea::placeholder {
         top: 6rem;
         left: 3%;        
     }    
-    .feedback__text {        
+    .feedback__text-message {        
         top: 11rem;
         left: 3%;        
     }             

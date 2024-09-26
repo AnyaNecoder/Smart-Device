@@ -40,3 +40,12 @@ closeBtn.addEventListener('click', () => {
 const inputs = document.querySelectorAll('input[type="tel"]');
 const im = new Inputmask('+7 (999) 999-99-99');
 im.mask(inputs);
+
+
+document.querySelectorAll('.footer-nav__title').forEach(title => {
+    title.addEventListener('click', () => {
+      const target = document.getElementById(title.dataset.target);      
+      target.classList.toggle('active');       
+      title.classList.toggle('active');
+    });
+  });

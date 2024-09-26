@@ -532,7 +532,7 @@ input[type="checkbox"]:checked + label::after {
     .header-content {        
         height: 40vh;
     }
-    .header-logo__disc {
+    .header-logo__disc--tablet {
         display: none;
     }
     .header-content__info {       
@@ -562,10 +562,9 @@ input[type="checkbox"]:checked + label::after {
         padding-block: 16px;        
         column-gap: 0;        
     }
-    .header-logo__link {
+    .header-logo__link-small {
         width: 38px;
         height: 38px;        
-        margin-right: 113px;
     }    
     .header-actions {
         column-gap: 23px;        
